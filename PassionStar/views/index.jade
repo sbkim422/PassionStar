@@ -1,0 +1,22 @@
+extends layout
+block content
+
+  // サイトのトップページ
+  #index(data-role='page')
+    // data-role='header'を指定したdivがヘッダとなる
+    div(data-role='header')
+      h1 mobbs test BBS
+    // data-role='content'を指定したdivがコンテンツ領域となる
+    div(data-role='content')
+      h2 mobbs test BBS
+      // data-role='collapsible'を指定したdivは開閉表示できる領域となる
+      // data-collapsed='false'を指定するとデフォルトで開いた表示となる
+      div(data-role='collapsible', data-content-theme='c', data-collapsed='false')
+        h3 mobbs대하여
+        p mobbs 좋습니다
+      // トピック一覧ページへのリンクはボタンとして表示する
+      a(href='#topics', data-role='button') 글목록
+    // data-role='footer'を指定したdivがフッタとなる
+    div(data-role='footer')
+      h1 
+        a(href='#about') mobbs ver.0.0.1 
